@@ -1,10 +1,10 @@
-#缓存清理专家专业版
+# 缓存清理专家 Pro
 
-居中对齐 p 对齐="中心"
-中心对齐img 源代码="./icons/icon128.png" alt="缓存清理专家 Pro 图标" width="96" />
+<p align="center">
+  <img src="./icons/icon128.png" alt="Cache Cleaner Pro Icon" width="96" />
 </p>
 
-中心对齐p 对齐="中心">
+<p align="center">
   面向当前站点的缓存与存储清理扩展，支持浏览记录清理、站点授权管理、站点保护列表、清理历史日志、深浅主题与 Tab 分栏操作。
 </p>
 
@@ -54,8 +54,8 @@
 
 ## 近期更新
 
-- 添加了中英文切换功能（`中文 / English`），并实现了语言设置的持久化。
-- 弹窗窗口尺寸固定为 `400 x 540`，解决了英文文本切换时窗口扩张和抖动的问题。
+- 新增中英文切换（`中文 / English`）并持久化语言设置。
+- 弹窗窗口尺寸固定为 `400 x 540`，避免英文文本切换时窗口扩张与抖动。
 - 优化 Tab 内容区底部留白过渡，避免按钮与边界贴边。
 - 优化外层容器圆角（仅外层容器），保持内部卡片/按钮风格一致。
 - 新增站点保护列表（白名单）：支持加入保护、取消保护、列表展示与命中拦截清理。
@@ -85,7 +85,7 @@
 
 ## 界面截图
 
-以下截图均使用 `images/` 目录中的本地图片文件。
+以下截图均使用 `images/` 目录中的本地图片文件。  
 若图片未显示，请确认以下文件存在：`images/1.5.png`、`images/3.5.png`。
 
 | 清理 Tab（浅色，上半） | 清理 Tab（浅色，下半） |
@@ -94,10 +94,14 @@
 | 记录 Tab（浅色） | 权限与保护列表（浅色） |
 | ![记录 Tab（浅色）](./images/02.png) | ![权限与保护列表（浅色）](./images/3.5.png) |
 
+补充（完整权限页示例）：
+
+![权限与保护列表（浅色，完整页）](./images/03.png)
+
 ## 架构说明
 
 ```mermaid
-流程图 LR
+flowchart LR
     A[Popup UI\npopup.html + popup.js] --> B[Chrome Extension APIs]
     B --> C[cookies / scripting / browsingData]
     B --> D[permissions / storage / tabs]
@@ -134,9 +138,9 @@
 
 | 权限 | 用途 |
 | --- | --- |
-| ` cookies ` | 读取和删除Cookie |
-| ` activeTab ` | 获取当前活动标签页的上下文 |
-| ` browsingData ` | 清除浏览数据 |
+| `cookies` | 读取与删除 Cookie |
+| `activeTab` | 获取当前活动标签页上下文 |
+| `browsingData` | 清除浏览器缓存 |
 | `storage` | 持久化主题、语言和当前 Tab 状态 |
 | `scripting` | 注入脚本读取/清理站点存储 |
 | `history` | 查询与删除浏览记录 |
