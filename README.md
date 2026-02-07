@@ -1,6 +1,6 @@
-# 缓存清理专家 Pro
+#缓存清理专家
 
-<p align="center">
+中心对齐p 对齐="中心">
   <img src="./icons/icon128.png" alt="Cache Cleaner Pro Icon" width="96" />
 </p>
 
