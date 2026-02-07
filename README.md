@@ -1,10 +1,10 @@
 # 缓存清理专家 Pro
 
-<p align="center">
-  <img src="./icons/icon128.png" alt="Cache Cleaner Pro Icon" width="96" />
+<p 对齐="中心">
+  <img src="[./icons/icon128.png](https://github.com/XingChengZero/cookie-cleaner-extension/blob/main/cookie-cleaner-extension/icons/icon128.png)" alt="Cache Cleaner Pro Icon" width="96" />
 </p>
 
-<p align="center">
+中心对齐p align="center">
   面向当前站点的缓存与存储清理扩展，支持浏览记录清理、站点授权管理、站点保护列表、清理历史日志、深浅主题与 Tab 分栏操作。
 </p>
 
